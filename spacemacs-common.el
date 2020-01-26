@@ -634,6 +634,25 @@ to 'auto, tags may not be properly aligned."
      `(mode-line           ((,class (:foreground ,base :background ,act1 :box (:color ,border :line-width 1)))))
      `(mode-line-buffer-id ((,class (:inherit bold :foreground ,func))))
      `(mode-line-inactive  ((,class (:foreground ,base :background ,bg1  :box (:color ,border :line-width 1)))))
+;;;;; smart-mode-line
+     ;; use (setq sml/theme nil) to enable Spacemacs for sml
+     `(sml/global              ((,class (:foreground ,base))))
+     `(sml/modes               ((,class (:inherit sml/global :weight bold))))
+     `(sml/minor-modes         ((,class (:foreground ,base-dim))))
+     `(sml/filename            ((,class (:inherit sml/global :weight bold))))
+     `(sml/prefix              ((,class (:foreground ,meta))))
+     `(sml/read-only           ((,class (:foreground ,war))))
+     `(sml/outside-modified    ((,class (:foreground ,base :background ,war))))
+     `(sml/modified            ((,class (:foreground ,type :weight bold))))
+     `(sml/line-number         ((,class (:inherit sml/modes))))
+     `(sml/col-number          ((,class (:inherit sml/minor-modes :weight bold))))
+     `(sml/position-percentage ((,class (:inherit sml/prefix))))
+     `(sml/process             ((,class (:inherit sml/prefix :weight bold))))
+     `(sml/sudo                ((,class (:inherit sml/outside-modified))))
+     `(sml/git                 ((,class (:foreground ,head2))))
+     `(sml/vc-edited           ((,class (:foreground ,head4))))
+     `(sml/charging            ((,class (:foreground ,head1))))
+     `(sml/discharging         ((,class (:foreground ,war))))
 
 ;;;;; mu4e
      `(mu4e-attach-number-face ((,class (:foreground ,var))))
