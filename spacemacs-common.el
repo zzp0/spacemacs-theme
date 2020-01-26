@@ -38,7 +38,7 @@
   "Spacemacs-theme options."
   :group 'faces)
 
-(defcustom spacemacs-theme-comment-bg t
+(defcustom spacemacs-theme-comment-bg nil
   "Use a background for comment lines."
   :type 'boolean
   :group 'spacemacs-theme)
@@ -62,7 +62,7 @@ to 'auto, tags may not be properly aligned."
   :type 'boolean
   :group 'spacemacs-theme)
 
-(defcustom spacemacs-theme-org-height t
+(defcustom spacemacs-theme-org-height nil
   "Use varying text heights for org headings."
   :type 'boolean
   :group 'spacemacs-theme)
