@@ -647,8 +647,8 @@ to 'auto, tags may not be properly aligned."
      `(markdown-table-face ((,class (:foreground ,base :background ,head1-bg))))
 
 ;;;;; mode-line
-     `(mode-line           ((,class (:foreground ,base :background ,highlight-dim :box (:color ,border :line-width -1)))))
-     `(mode-line-inactive  ((,class (:foreground ,base :background ,comment-bg :box (:color ,border :line-width -1)))))
+     `(mode-line           ((,class (:foreground ,base :background ,highlight-dim))))
+     `(mode-line-inactive  ((,class (:foreground ,base :background ,comment-bg))))
      `(mode-line-buffer-id ((,class (:inherit bold :foreground ,base))))
 
 ;;;;; smart-mode-line
