@@ -192,7 +192,7 @@ to 'auto, tags may not be properly aligned."
      `(fringe ((,class (:background ,bg1 :foreground ,base))))
      `(header-line ((,class :background ,bg2)))
      `(highlight ((,class (:foreground ,base :background ,highlight))))
-     `(hl-line ((,class (:background ,blue-bg-s :extend t))))
+     `(hl-line ((,class (:background ,bg3 :extend t))))
      `(isearch ((,class (:foreground ,bg1 :background ,mat))))
      `(lazy-highlight ((,class (:foreground ,base :background ,green-bg-s :weight normal))))
      `(link ((,class (:foreground ,comment :underline t))))
@@ -648,7 +648,7 @@ to 'auto, tags may not be properly aligned."
 
 ;;;;; mode-line
      `(mode-line           ((,class (:foreground ,base :background ,highlight-dim))))
-     `(mode-line-inactive  ((,class (:foreground ,base :background ,comment-bg))))
+     `(mode-line-inactive  ((,class (:foreground ,base :background ,head1-bg))))
      `(mode-line-buffer-id ((,class (:inherit bold :foreground ,base))))
 
 ;;;;; smart-mode-line
