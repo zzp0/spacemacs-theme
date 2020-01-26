@@ -58,7 +58,7 @@
 
 Note that if you change this to a non-nil value, you may want to
 also adjust the value of `org-agenda-tags-column'. If that is set
-to 'auto, tags may not be properly aligned. "
+to 'auto, tags may not be properly aligned."
   :type 'boolean
   :group 'spacemacs-theme)
 
@@ -68,12 +68,12 @@ to 'auto, tags may not be properly aligned. "
   :group 'spacemacs-theme)
 
 (defcustom spacemacs-theme-org-bold t
-  "Inherit text bold for org headings"
+  "Inherit text bold for org headings."
   :type 'boolean
   :group 'spacemacs-theme)
 
 (defcustom spacemacs-theme-org-priority-bold t
-  "Inherit text bold for priority items in agenda view"
+  "Inherit text bold for priority items in agenda view."
   :type 'boolean
   :group 'spacemacs-theme)
 
@@ -88,7 +88,7 @@ to 'auto, tags may not be properly aligned. "
   :group 'spacemacs-theme)
 
 (defcustom spacemacs-theme-underline-parens t
-  "If non-nil, underline matching parens when using `show-paren-mode' or similar."
+  "If non-nil, underline matching parens when using \\[show-paren-mode] or similar."
   :type 'boolean
   :group 'spacemacs-theme)
 
