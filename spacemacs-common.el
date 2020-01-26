@@ -194,7 +194,7 @@ to 'auto, tags may not be properly aligned."
      `(highlight ((,class (:foreground ,base :background ,highlight))))
      `(hl-line ((,class (:background ,blue-bg-s :extend t))))
      `(isearch ((,class (:foreground ,bg1 :background ,mat))))
-     `(lazy-highlight ((,class (:background ,green-bg-s :weight normal))))
+     `(lazy-highlight ((,class (:foreground ,base :background ,green-bg-s :weight normal))))
      `(link ((,class (:foreground ,comment :underline t))))
      `(link-visited ((,class (:foreground ,comp :underline t))))
      `(match ((,class (:background ,highlight :foreground ,mat))))
@@ -466,6 +466,7 @@ to 'auto, tags may not be properly aligned."
      `(gnus-summary-cancelled ((,class (:background ,war :foreground ,bg1))))
 
 ;;;;; helm
+     `(helm-mode-prefix ((,class (:foreground ,base :background ,highlight))))
      `(helm-bookmark-directory ((,class (:inherit helm-ff-directory))))
      `(helm-bookmark-file ((,class (:foreground ,base))))
      `(helm-bookmark-gnus ((,class (:foreground ,comp))))
@@ -478,7 +479,7 @@ to 'auto, tags may not be properly aligned."
      `(helm-buffer-process ((,class (:foreground ,keyword :background ,bg1))))
      `(helm-buffer-saved-out ((,class (:foreground ,base :background ,bg1))))
      `(helm-buffer-size ((,class (:foreground ,base :background ,bg1))))
-     `(helm-candidate-number ((,class (:background ,bg1 :foreground ,keyword :inherit bold))))
+     `(helm-candidate-number ((,class (:foreground ,keyword))))
      `(helm-ff-directory ((,class (:foreground ,keyword :background ,bg1 :inherit bold))))
      `(helm-ff-dotted-directory ((,class (:foreground ,keyword :background ,bg1 :inherit bold))))
      `(helm-ff-dotted-symlink-directory ((,class (:foreground ,cyan :background ,bg1 :inherit bold))))
@@ -492,13 +493,13 @@ to 'auto, tags may not be properly aligned."
      `(helm-grep-finish ((,class (:foreground ,base :background ,bg1))))
      `(helm-grep-lineno ((,class (:foreground ,type :background ,bg1 :inherit bold))))
      `(helm-grep-match ((,class (:foreground nil :background nil :inherit helm-match))))
+     `(helm-moccur-buffer ((,class (:foreground ,var :background ,bg1))))
      `(helm-header ((,class (:foreground ,base :background ,bg1 :underline nil :box nil))))
      `(helm-header-line-left-margin ((,class (:foreground ,keyword :background ,nil))))
-     `(helm-match ((,class (:background ,head1-bg :foreground ,head1))))
-     `(helm-match-item ((,class (:background ,head1-bg :foreground ,head1))))
-     `(helm-moccur-buffer ((,class (:foreground ,var :background ,bg1))))
+     `(helm-match ((,class (:background ,head3-bg :foreground ,head3))))
+     `(helm-match-item ((,class (:background ,head4-bg :foreground ,head4))))
      `(helm-selection ((,class (:background ,highlight))))
-     `(helm-selection-line ((,class (:background ,bg2))))
+     `(helm-selection-line ((,class (:background ,highlight))))
      `(helm-separator ((,class (:foreground ,comp :background ,bg1))))
      `(helm-source-header ((,class (:background ,comp :foreground ,bg1 :inherit bold))))
      `(helm-time-zone-current ((,class (:foreground ,keyword :background ,bg1))))
@@ -513,6 +514,9 @@ to 'auto, tags may not be properly aligned."
 ;;;;; highlights
      `(hi-green  ((,class (:foreground ,green :background ,green-bg))))
      `(hi-yellow ((,class (:foreground ,yellow :background ,yellow-bg))))
+     `(hi-blue ((,class (:foreground ,cyan :background ,blue-bg))))
+     `(hi-blue-b ((,class (:foreground ,cyan :background ,blue-bg :weight bold))))
+     `(hi-red-b ((,class (:foreground ,red :background ,red-bg :weight bold))))
 
 ;;;;; highlight-indentation
      `(highlight-indentation-face ((,class (:background ,comment-bg))))
