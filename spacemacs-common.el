@@ -192,7 +192,7 @@ to 'auto, tags may not be properly aligned."
      `(fringe ((,class (:background ,bg1 :foreground ,base))))
      `(header-line ((,class :background ,bg2)))
      `(highlight ((,class (:foreground ,base :background ,highlight))))
-     `(hl-line ((,class (:background ,bg2 :extend t))))
+     `(hl-line ((,class (:background ,blue-bg-s :extend t))))
      `(isearch ((,class (:foreground ,bg1 :background ,mat))))
      `(lazy-highlight ((,class (:background ,green-bg-s :weight normal))))
      `(link ((,class (:foreground ,comment :underline t))))
