@@ -520,6 +520,9 @@ to 'auto, tags may not be properly aligned."
 ;;;;; highlight-symbol
      `(highlight-symbol-face ((,class (:background ,bg2))))
 
+;;;;; volatile-highlights
+     `(vhl/default-face ((,class (:background ,highlight-dim))))
+
 ;;;;; hydra
      `(hydra-face-blue ((,class (:foreground ,blue))))
      `(hydra-face-red ((,class (:foreground ,red))))
