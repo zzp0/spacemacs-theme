@@ -218,9 +218,6 @@ to 'auto, tags may not be properly aligned."
 ;;;;; anzu-mode
      `(anzu-mode-line ((,class (:foreground ,yellow :inherit bold))))
 
-;;;;; auto-complete
-     `(ac-completion-face ((,class (:background ,ttip-bg :foreground ,ttip))))
-
 ;;;;; avy
      `(avy-lead-face   ((,class (:background ,green-bg :foreground ,green))))
      `(avy-lead-face-0 ((,class (:background ,green-bg :foreground ,yellow))))
@@ -246,18 +243,6 @@ to 'auto, tags may not be properly aligned."
      `(cfw:face-toolbar             ((,class (:foreground ,base :background ,bg1))))
      `(cfw:face-toolbar-button-off  ((,class (:foreground ,base :weight bold))))
      `(cfw:face-toolbar-button-on   ((,class (:foreground ,base :weight bold))))
-
-;;;;; centaur-tabs
-     `(centaur-tabs-default ((,class (:background ,bg1 :foreground ,bg1))))
-     `(centaur-tabs-selected ((,class (:background ,bg1 :foreground ,base :weight bold))))
-     `(centaur-tabs-unselected ((,class (:background ,bg2 :foreground ,base-dim :weight light))))
-     `(centaur-tabs-selected-modified ((,class (:background ,bg1
-							    :foreground ,blue :weight bold))))
-     `(centaur-tabs-unselected-modified ((,class (:background ,bg2 :weight light
-							      :foreground ,blue))))
-     `(centaur-tabs-active-bar-face ((,class (:background ,keyword))))
-     `(centaur-tabs-modified-marker-selected ((,class (:inherit 'centaur-tabs-selected :foreground,keyword))))
-     `(centaur-tabs-modified-marker-unselected ((,class (:inherit 'centaur-tabs-unselected :foreground,keyword))))
 
 ;;;;; cider
      `(cider-enlightened ((,class (:background nil :box (:color ,yellow :line-width -1 :style nil) :foreground ,yellow))))
@@ -313,9 +298,6 @@ to 'auto, tags may not be properly aligned."
      `(dired-perm-write ((,class (:foreground ,base :underline t))))
      `(dired-symlink ((,class (:foreground ,cyan :background ,bg1 :inherit bold))))
      `(dired-warning ((,class (:foreground ,war))))
-
-;;;;; doom-modeline
-     `(doom-modeline-bar ((,class (:background ,keyword))))
 
 ;;;;; ediff
      `(ediff-current-diff-A ((,class(:background ,red-bg :foreground ,red :extend t))))
@@ -398,26 +380,6 @@ to 'auto, tags may not be properly aligned."
      `(evil-ex-substitute-matches ((,class (:background ,red-bg :foreground ,red))))
      `(evil-ex-substitute-replacement ((,class (:background ,green-bg :foreground ,green))))
 
-;;;;; evil-goggles
-      `(evil-goggles--pulse-face ((,class (:background ,yellow-bg :foreground ,yellow))))
-      `(evil-goggles-change-face ((,class (:background ,blue-bg-s :foreground ,blue))))
-      `(evil-goggles-commentary-face ((,class (:background ,aqua-bg :foreground ,aqua))))
-      `(evil-goggles-delete-face ((,class (:background ,red-bg-s :foreground ,red))))
-      `(evil-goggles-fill-and-move-face ((,class (:background ,green-bg-s :foreground ,green))))
-      `(evil-goggles-indent-face ((,class (:background ,green-bg-s :foreground ,green))))
-      `(evil-goggles-join-face ((,class (:background ,green-bg-s :foreground ,green))))
-      `(evil-goggles-nerd-commenter-face ((,class (:background ,aqua-bg :foreground ,aqua))))
-      `(evil-goggles-paste-face ((,class (:background ,green-bg-s :foreground ,green))))
-      `(evil-goggles-record-macro-face ((,class (:background ,blue-bg-s :foreground ,blue))))
-      `(evil-goggles-replace-with-register-face ((,class (:background ,yellow-bg :foreground ,yellow))))
-      `(evil-goggles-set-marker-face ((,class (:background ,blue-bg-s :foreground ,blue))))
-      `(evil-goggles-shift-face ((,class (:background ,blue-bg-s :foreground ,blue))))
-      `(evil-goggles-surround-face ((,class (:background ,blue-bg-s :foreground ,blue))))
-      `(evil-goggles-yank-face ((,class (:background ,blue-bg-s :foreground ,blue))))
-      `(evil-goggles-undo-redo-add-face ((,class (:background ,green-bg-s :foreground ,green))))
-      `(evil-goggles-undo-redo-change-face ((,class (:background ,blue-bg-s :foreground ,blue))))
-      `(evil-goggles-undo-redo-remove-face ((,class (:background ,red-bg-s :foreground ,red))))
-
 ;;;;; evil-mc
       `(evil-mc-cursor-bar-face ((,class (:foreground ,aqua))))
       `(evil-mc-cursor-default-face ((,class (:background ,aqua :foreground ,bg4))))
@@ -494,11 +456,6 @@ to 'auto, tags may not be properly aligned."
      `(gnus-header-name ((,class (:foreground ,comp))))
      `(gnus-header-subject ((,class (:foreground ,func :inherit bold))))
      `(gnus-summary-cancelled ((,class (:background ,war :foreground ,bg1))))
-
-;;;;; guide-key
-     `(guide-key/highlight-command-face ((,class (:foreground ,base))))
-     `(guide-key/key-face ((,class (:foreground ,keyword))))
-     `(guide-key/prefix-command-face ((,class (:foreground ,keyword :inherit bold))))
 
 ;;;;; helm
      `(helm-bookmark-directory ((,class (:inherit helm-ff-directory))))
