@@ -288,6 +288,14 @@ to 'auto, tags may not be properly aligned."
      `(diff-hl-delete ((,class :background ,red-bg-s :foreground ,red)))
      `(diff-hl-insert ((,class :background ,green-bg-s :foreground ,green)))
 
+;;;;; dired-subtree
+     `(dired-subtree-depth-1-face ((,class :background ,cblk-ln-bg)))
+     `(dired-subtree-depth-2-face ((,class :background ,cblk-bg)))
+     `(dired-subtree-depth-3-face ((,class :background ,cblk-ln-bg)))
+     `(dired-subtree-depth-4-face ((,class :background ,cblk-bg)))
+     `(dired-subtree-depth-5-face ((,class :background ,cblk-ln-bg)))
+     `(dired-subtree-depth-6-face ((,class :background ,cblk-bg)))
+
 ;;;;; dired
      `(dired-directory ((,class (:foreground ,keyword :background ,bg1 :inherit bold))))
      `(dired-flagged ((,class (:foreground ,red))))
