@@ -389,10 +389,10 @@ to 'auto, tags may not be properly aligned."
      `(evil-ex-substitute-replacement ((,class (:background ,green-bg :foreground ,green))))
 
 ;;;;; evil-mc
-      `(evil-mc-cursor-bar-face ((,class (:foreground ,aqua))))
-      `(evil-mc-cursor-default-face ((,class (:background ,aqua :foreground ,bg4))))
-      `(evil-mc-cursor-hbar-face ((,class (:foreground ,aqua))))
-      `(evil-mc-region-face ((,class (:inherit highlight))))
+     `(evil-mc-cursor-bar-face ((,class (:foreground ,aqua))))
+     `(evil-mc-cursor-default-face ((,class (:background ,aqua :foreground ,bg4))))
+     `(evil-mc-cursor-hbar-face ((,class (:foreground ,aqua))))
+     `(evil-mc-region-face ((,class (:inherit highlight))))
 
 ;;;;; flycheck
      `(flycheck-error
@@ -991,7 +991,7 @@ to 'auto, tags may not be properly aligned."
 
 
 ;;;;; pdf-tools
-    `(pdf-view-midnight-colors '(,base . ,bg1)))
+     `(pdf-view-midnight-colors '(,base . ,bg1)))
     ))
 
 
