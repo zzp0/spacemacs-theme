@@ -584,6 +584,7 @@ to 'auto, tags may not be properly aligned."
      `(linum-relative-current-face ((,class (:foreground ,comp))))
 
 ;;;;; magit
+     `(magit-diff-file-heading ((,class :weight bold :box (:line-width -1 :style nil))))
      `(magit-blame-culprit ((,class :background ,yellow-bg :foreground ,yellow)))
      `(magit-blame-date    ((,class :background ,yellow-bg :foreground ,green)))
      `(magit-blame-hash    ((,class :background ,yellow-bg :foreground ,func)))
@@ -708,6 +709,7 @@ to 'auto, tags may not be properly aligned."
      `(neo-root-dir-face ((,class (:foreground ,func :inherit bold))))
 
 ;;;;; org
+     `(org-headline-done ((,class :strike-through t :slant italic)))
      `(org-agenda-clocking ((,class (:background ,highlight :foreground ,comp))))
      `(org-agenda-date ((,class (:foreground ,var :height ,(if spacemacs-theme-org-agenda-height 1.1 1.0)))))
      `(org-agenda-date-today ((,class (:foreground ,keyword :inherit bold :height ,(if spacemacs-theme-org-agenda-height 1.3 1.0)))))
