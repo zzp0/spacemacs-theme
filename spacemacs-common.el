@@ -496,7 +496,7 @@ to 'auto, tags may not be properly aligned."
      `(helm-moccur-buffer ((,class (:foreground ,var :background ,bg1))))
      `(helm-header ((,class (:foreground ,base :background ,bg1 :underline nil :box nil))))
      `(helm-header-line-left-margin ((,class (:foreground ,keyword :background ,nil))))
-     `(helm-match ((,class (:background ,head3-bg :foreground ,head3))))
+     `(helm-match ((,class (:background ,head1-bg :foreground ,head1))))
      `(helm-match-item ((,class (:background ,head4-bg :foreground ,head4))))
      `(helm-selection ((,class (:background ,highlight))))
      `(helm-selection-line ((,class (:background ,highlight))))
