@@ -220,10 +220,10 @@ to 'auto, tags may not be properly aligned."
      `(anzu-mode-line ((,class (:foreground ,yellow :inherit bold))))
 
 ;;;;; avy
-     `(avy-lead-face   ((,class (:background ,green-bg :foreground ,green))))
-     `(avy-lead-face-0 ((,class (:background ,green-bg :foreground ,yellow))))
-     `(avy-lead-face-1 ((,class (:background ,green-bg :foreground ,magenta))))
-     `(avy-lead-face-2 ((,class (:background ,green-bg :foreground ,blue))))
+     `(avy-lead-face   ((,class (:background ,green-bg :foreground ,green :weight bold))))
+     `(avy-lead-face-0 ((,class (:background ,green-bg :foreground ,yellow :weight bold))))
+     `(avy-lead-face-1 ((,class (:background ,green-bg :foreground ,magenta :weight bold))))
+     `(avy-lead-face-2 ((,class (:background ,green-bg :foreground ,blue :weight bold))))
 
 ;;;;; calfw
      `(cfw:face-title               ((,class (:foreground ,head1 :height 2.0 :weight bold :inherit variable-pitch))))
