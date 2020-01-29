@@ -207,6 +207,7 @@ to 'auto, tags may not be properly aligned."
      `(tooltip ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
      `(vertical-border ((,class (:foreground ,border))))
      `(warning ((,class (:foreground ,war))))
+     `(trailing-whitespace ((,class :foreground nil :background ,err)))
 
 ;;;;; ace-window
      `(aw-leading-char-face ((,class (:foreground ,red :height 1.0))))
@@ -940,7 +941,6 @@ to 'auto, tags may not be properly aligned."
 
 ;;;;; other, need more work
      `(ac-completion-face ((,class (:underline t :foreground ,keyword))))
-     `(ffap ((,class (:foreground ,base))))
      `(flx-highlight-face ((,class (:foreground ,comp :underline nil))))
      `(icompletep-determined ((,class :foreground ,keyword)))
      `(js2-external-variable ((,class (:foreground ,comp))))
@@ -957,7 +957,11 @@ to 'auto, tags may not be properly aligned."
      `(js3-jsdoc-tag-face ((,class (:foreground ,keyword))))
      `(js3-warning-face ((,class (:underline ,keyword))))
      `(slime-repl-inputed-output-face ((,class (:foreground ,comp))))
-     `(trailing-whitespace ((,class :foreground nil :background ,err)))
+
+;;;;; ffap
+     `(ffap ((,class (:foreground ,base))))
+
+;;;;; undo-tree
      `(undo-tree-visualizer-current-face ((,class :foreground ,keyword)))
      `(undo-tree-visualizer-default-face ((,class :foreground ,base)))
      `(undo-tree-visualizer-register-face ((,class :foreground ,comp)))
