@@ -584,9 +584,6 @@ to 'auto, tags may not be properly aligned."
      `(line-number ((,class (:foreground ,lnum :background ,bg2 :inherit default))))
      `(line-number-current-line ((,class (:foreground ,base :background ,bg2 :inherit line-number))))
 
-;;;;; linum-relative
-     `(linum-relative-current-face ((,class (:foreground ,comp))))
-
 ;;;;; magit
      `(magit-diff-file-heading ((,class :weight bold :box (:line-width -1 :style nil))))
      `(magit-blame-culprit ((,class :background ,yellow-bg :foreground ,yellow)))
