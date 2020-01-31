@@ -526,7 +526,7 @@ to 'auto, tags may not be properly aligned."
      `(highlight-symbol-face ((,class (:background ,bg2))))
 
 ;;;;; volatile-highlights
-     `(vhl/default-face ((,class (:background ,highlight-dim))))
+     `(vhl/default-face ((,class (:background ,lnum))))
 
 ;;;;; hydra
      `(hydra-face-blue ((,class (:foreground ,blue))))
@@ -646,7 +646,7 @@ to 'auto, tags may not be properly aligned."
 
 ;;;;; mode-line
      `(mode-line           ((,class (:foreground ,base :background ,highlight-dim))))
-     `(mode-line-inactive  ((,class (:foreground ,base :background ,head1-bg))))
+     `(mode-line-inactive  ((,class (:foreground ,base :background ,bg4))))
      `(mode-line-buffer-id ((,class (:inherit bold :foreground ,base))))
 
 ;;;;; smart-mode-line
