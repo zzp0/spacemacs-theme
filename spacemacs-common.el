@@ -788,12 +788,6 @@ to 'auto, tags may not be properly aligned."
      `(popup-scroll-bar-foreground-face ((,class (:background ,act2))))
      `(popup-tip-face ((,class (:background ,ttip-sl :foreground ,base :bold nil :italic nil :underline nil))))
 
-;;;;; powerline
-     `(powerline-active1 ((,class (:background ,act2 :foreground ,base))))
-     `(powerline-active2 ((,class (:background ,act2 :foreground ,base))))
-     `(powerline-inactive1 ((,class (:background ,bg2 :foreground ,base))))
-     `(powerline-inactive2 ((,class (:background ,bg2 :foreground ,base))))
-
 ;;;;; rainbow-delimiters
      `(rainbow-delimiters-depth-1-face ((,class :foreground ,keyword)))
      `(rainbow-delimiters-depth-2-face ((,class :foreground ,func)))
@@ -841,12 +835,6 @@ to 'auto, tags may not be properly aligned."
      `(solaire-minibuffer-face ((,class (:inherit default :background ,bg2))))
      `(solaire-hl-line-face ((,class (:inherit hl-line :background ,bg2))))
      `(solaire-org-hide-face ((,class (:inherit org-hide :background ,bg2))))
-
-;;;;; spaceline
-     `(spaceline-flycheck-error  ((,class (:foreground ,err))))
-     `(spaceline-flycheck-info   ((,class (:foreground ,keyword))))
-     `(spaceline-flycheck-warning((,class (:foreground ,war))))
-     `(spaceline-python-venv ((,class (:foreground ,comp))))
 
 ;;;;; spacemacs-specific
      `(spacemacs-transient-state-title-face ((,class (:background nil :foreground ,comp :box nil :inherit bold))))
