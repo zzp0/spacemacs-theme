@@ -194,7 +194,7 @@ to 'auto, tags may not be properly aligned."
      `(fringe ((,class (:background ,bg1 :foreground ,base))))
      `(header-line ((,class :background ,bg2)))
      `(highlight ((,class (:foreground ,base :background ,highlight))))
-     `(hl-line ((,class (:background ,bg3 :extend t))))
+     `(hl-line ((,class (:background ,bg2 :extend t))))
      `(isearch ((,class (:foreground ,bg1 :background ,mat))))
      `(lazy-highlight ((,class (:foreground ,base :background ,green-bg-s :weight normal))))
      `(link ((,class (:foreground ,comment :underline t))))
@@ -526,9 +526,6 @@ to 'auto, tags may not be properly aligned."
 
 ;;;;; highlight-symbol
      `(highlight-symbol-face ((,class (:background ,bg2))))
-
-;;;;; volatile-highlights
-     `(vhl/default-face ((,class (:background ,lnum))))
 
 ;;;;; hydra
      `(hydra-face-blue ((,class (:foreground ,blue))))
