@@ -48,40 +48,6 @@
   :type 'boolean
   :group 'spacemacs-theme)
 
-(defcustom spacemacs-theme-keyword-italic nil
-  "Enable italics for keywords."
-  :type 'boolean
-  :group 'spacemacs-theme)
-
-(defcustom spacemacs-theme-org-agenda-height nil
-  "If non-nil, use varying text heights for agenda items.
-
-Note that if you change this to a non-nil value, you may want to
-also adjust the value of `org-agenda-tags-column'. If that is set
-to 'auto, tags may not be properly aligned."
-  :type 'boolean
-  :group 'spacemacs-theme)
-
-(defcustom spacemacs-theme-org-height nil
-  "Use varying text heights for org headings."
-  :type 'boolean
-  :group 'spacemacs-theme)
-
-(defcustom spacemacs-theme-org-bold t
-  "Inherit text bold for org headings."
-  :type 'boolean
-  :group 'spacemacs-theme)
-
-(defcustom spacemacs-theme-org-priority-bold t
-  "Inherit text bold for priority items in agenda view."
-  :type 'boolean
-  :group 'spacemacs-theme)
-
-(defcustom spacemacs-theme-org-highlight nil
-  "Highlight org headings."
-  :type 'boolean
-  :group 'spacemacs-theme)
-
 (defcustom spacemacs-theme-custom-colors nil
   "Specify a list of custom colors."
   :type 'alist
@@ -185,7 +151,7 @@ to 'auto, tags may not be properly aligned."
      `(font-lock-constant-face ((,class (:foreground ,const))))
      `(font-lock-doc-face ((,class (:foreground ,meta))))
      `(font-lock-function-name-face ((,class (:foreground ,func :inherit bold))))
-     `(font-lock-keyword-face ((,class (:inherit bold :foreground ,keyword :slant ,(if spacemacs-theme-keyword-italic 'italic 'normal)))))
+     `(font-lock-keyword-face ((,class (:inherit bold :foreground ,keyword))))
      `(font-lock-negation-char-face ((,class (:foreground ,const))))
      `(font-lock-preprocessor-face ((,class (:foreground ,func))))
      `(font-lock-reference-face ((,class (:foreground ,const))))
@@ -214,7 +180,7 @@ to 'auto, tags may not be properly aligned."
      `(trailing-whitespace ((,class :foreground nil :background ,err)))
 
 ;;;;; ace-window
-     `(aw-leading-char-face ((,class (:foreground ,red :height 1.0))))
+     `(aw-leading-char-face ((,class (:foreground ,red))))
 
 ;;;;; ahs
      `(ahs-face ((,class (:background ,highlight))))
@@ -562,12 +528,12 @@ to 'auto, tags may not be properly aligned."
      `(font-latex-italic-face ((,class (:foreground ,keyword :italic t))))
      `(font-latex-match-reference-keywords ((,class (:foreground ,const))))
      `(font-latex-match-variable-keywords ((,class (:foreground ,var))))
-     `(font-latex-sectioning-0-face ((,class (:inherit bold :foreground ,head3 :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,(when spacemacs-theme-org-highlight head3-bg)))))
-     `(font-latex-sectioning-1-face ((,class (:inherit bold :foreground ,head4 :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,(when spacemacs-theme-org-highlight head4-bg)))))
-     `(font-latex-sectioning-2-face ((,class (:inherit bold :foreground ,head1 :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,(when spacemacs-theme-org-highlight head1-bg)))))
-     `(font-latex-sectioning-3-face ((,class (:inherit bold :foreground ,head2 :height ,(if spacemacs-theme-org-height 1.2 1.0) :background ,(when spacemacs-theme-org-highlight head2-bg)))))
-     `(font-latex-sectioning-4-face ((,class (:bold nil :foreground ,head3 :height ,(if spacemacs-theme-org-height 1.1 1.0) :background ,(when spacemacs-theme-org-highlight head3-bg)))))
-     `(font-latex-sectioning-5-face ((,class (:bold nil :foreground ,head4 :background ,(when spacemacs-theme-org-highlight head4-bg)))))
+     `(font-latex-sectioning-0-face ((,class (:inherit bold :foreground ,head3))))
+     `(font-latex-sectioning-1-face ((,class (:inherit bold :foreground ,head4))))
+     `(font-latex-sectioning-2-face ((,class (:inherit bold :foreground ,head1))))
+     `(font-latex-sectioning-3-face ((,class (:inherit bold :foreground ,head2))))
+     `(font-latex-sectioning-4-face ((,class (:bold nil :foreground ,head3))))
+     `(font-latex-sectioning-5-face ((,class (:bold nil :foreground ,head4))))
      `(font-latex-string-face ((,class (:foreground ,str))))
      `(font-latex-warning-face ((,class (:foreground ,war))))
 
@@ -635,10 +601,10 @@ to 'auto, tags may not be properly aligned."
      `(Man-underline ((,class (:foreground ,comp :underline t))))
 
 ;;;;; markdown
-     `(markdown-header-face-1 ((,class (:inherit bold :foreground ,head1 :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,(when spacemacs-theme-org-highlight head1-bg)))))
-     `(markdown-header-face-2 ((,class (:inherit bold :foreground ,head2 :height ,(if spacemacs-theme-org-height 1.2 1.0) :background ,(when spacemacs-theme-org-highlight head2-bg)))))
-     `(markdown-header-face-3 ((,class (:bold nil :foreground ,head3 :height ,(if spacemacs-theme-org-height 1.1 1.0) :background ,(when spacemacs-theme-org-highlight head3-bg)))))
-     `(markdown-header-face-4 ((,class (:bold nil :foreground ,head4 :background ,(when spacemacs-theme-org-highlight head4-bg)))))
+     `(markdown-header-face-1 ((,class (:inherit bold :foreground ,head1))))
+     `(markdown-header-face-2 ((,class (:inherit bold :foreground ,head2))))
+     `(markdown-header-face-3 ((,class (:bold nil :foreground ,head3))))
+     `(markdown-header-face-4 ((,class (:bold nil :foreground ,head4))))
      `(markdown-header-face-5 ((,class (:bold nil :foreground ,head1))))
      `(markdown-header-face-6 ((,class (:bold nil :foreground ,head2))))
      `(markdown-table-face ((,class (:foreground ,base :background ,head1-bg))))
@@ -713,10 +679,10 @@ to 'auto, tags may not be properly aligned."
 ;;;;; org
      `(org-headline-done ((,class :strike-through t :slant italic)))
      `(org-agenda-clocking ((,class (:background ,highlight :foreground ,comp))))
-     `(org-agenda-date ((,class (:foreground ,var :height ,(if spacemacs-theme-org-agenda-height 1.1 1.0)))))
-     `(org-agenda-date-today ((,class (:foreground ,keyword :inherit bold :height ,(if spacemacs-theme-org-agenda-height 1.3 1.0)))))
+     `(org-agenda-date ((,class (:foreground ,var))))
+     `(org-agenda-date-today ((,class (:foreground ,keyword :inherit bold))))
      `(org-agenda-date-weekend ((,class (:inherit bold :foreground ,var))))
-     `(org-agenda-done ((,class (:foreground ,suc :height ,(if spacemacs-theme-org-agenda-height 1.2 1.0)))))
+     `(org-agenda-done ((,class (:foreground ,suc))))
      `(org-agenda-structure ((,class (:inherit bold :foreground ,comp))))
      `(org-block ((,class (:background ,cblk-bg :foreground ,cblk :extend t))))
      `(org-block-begin-line ((,class (:background ,cblk-ln-bg :foreground ,cblk-ln :extend t))))
@@ -728,16 +694,16 @@ to 'auto, tags may not be properly aligned."
      `(org-date ((,class (:underline t :foreground ,var))))
      `(org-date-selected ((,class (:background ,func :foreground ,bg1))))
      `(org-document-info-keyword ((,class (:foreground ,meta))))
-     `(org-document-title ((,class (:foreground ,func :inherit bold :height ,(if spacemacs-theme-org-height 1.4 1.0) :underline t))))
+     `(org-document-title ((,class (:foreground ,func :inherit bold :underline t))))
      `(org-done ((,class (:foreground ,suc :inherit bold :background ,green-bg))))
      `(org-ellipsis ((,class (:foreground ,keyword))))
      `(org-footnote  ((,class (:underline t :foreground ,base))))
      `(org-hide ((,class (:foreground ,base))))
      `(org-kbd ((,class (:inherit region :foreground ,base :box (:line-width 1 :style released-button)))))
-     `(org-level-1 ((,class (:inherit bold :bold ,(if spacemacs-theme-org-bold 'unspecified nil) :foreground ,head1 :height ,(if spacemacs-theme-org-height 1.3 1.0) :background ,(when spacemacs-theme-org-highlight head1-bg)))))
-     `(org-level-2 ((,class (:inherit bold :bold ,(if spacemacs-theme-org-bold 'unspecified nil) :foreground ,head2 :height ,(if spacemacs-theme-org-height 1.2 1.0) :background ,(when spacemacs-theme-org-highlight head2-bg)))))
-     `(org-level-3 ((,class (:bold nil :foreground ,head3 :height ,(if spacemacs-theme-org-height 1.1 1.0) :background ,(when spacemacs-theme-org-highlight head3-bg)))))
-     `(org-level-4 ((,class (:bold nil :foreground ,head4 :background ,(when spacemacs-theme-org-highlight head4-bg)))))
+     `(org-level-1 ((,class (:inherit bold :foreground ,head1))))
+     `(org-level-2 ((,class (:inherit bold :foreground ,head2))))
+     `(org-level-3 ((,class (:bold nil :foreground ,head3))))
+     `(org-level-4 ((,class (:bold nil :foreground ,head4))))
      `(org-level-5 ((,class (:bold nil :foreground ,head1))))
      `(org-level-6 ((,class (:bold nil :foreground ,head2))))
      `(org-level-7 ((,class (:bold nil :foreground ,head3))))
@@ -745,10 +711,10 @@ to 'auto, tags may not be properly aligned."
      `(org-link ((,class (:underline t :foreground ,comment))))
      `(org-meta-line ((,class (:foreground ,meta))))
      `(org-mode-line-clock-overrun ((,class (:foreground ,err))))
-     `(org-priority ((,class (:foreground ,war :inherit bold :bold ,(if spacemacs-theme-org-priority-bold 'unspecified nil)))))
+     `(org-priority ((,class (:foreground ,war :inherit bold))))
      `(org-quote ((,class (:inherit org-block :slant italic))))
      `(org-scheduled ((,class (:foreground ,comp))))
-     `(org-scheduled-today ((,class (:foreground ,func :height ,(if spacemacs-theme-org-agenda-height 1.2 1.0)))))
+     `(org-scheduled-today ((,class (:foreground ,func))))
      `(org-scheduled-previously ((,class (:foreground ,base :slant italic))))
      `(org-sexp-date ((,class (:foreground ,base))))
      `(org-special-keyword ((,class (:foreground ,func))))
