@@ -93,11 +93,13 @@ to 'auto, tags may not be properly aligned."
   :group 'spacemacs-theme)
 
 (defun true-color-p ()
+  "No comment."
   (or
    (display-graphic-p)
    (= (tty-display-color-cells) 16777216)))
 
 (defun create-spacemacs-theme (variant theme-name)
+  "No comment `VARIANT' and `THEME-NAME'."
   (let ((class '((class color) (min-colors 89))) ;;              ~~ Dark ~~                              ~~ Light ~~
         ;;                                                          GUI       TER                           GUI       TER
         ;; generic
