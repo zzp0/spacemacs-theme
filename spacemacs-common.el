@@ -224,10 +224,11 @@ to 'auto, tags may not be properly aligned."
      `(anzu-mode-line ((,class (:foreground ,yellow :inherit bold))))
 
 ;;;;; avy
-     `(avy-lead-face   ((,class (:background ,green-bg :foreground ,green :weight bold))))
-     `(avy-lead-face-0 ((,class (:background ,green-bg :foreground ,yellow :weight bold))))
-     `(avy-lead-face-1 ((,class (:background ,green-bg :foreground ,magenta :weight bold))))
-     `(avy-lead-face-2 ((,class (:background ,green-bg :foreground ,blue :weight bold))))
+     `(avy-lead-face   ((,class (:inherit isearch))))
+     `(avy-lead-face-0 ((,class (:inherit isearch :background ,yellow))))
+     `(avy-lead-face-1 ((,class (:inherit isearch :background ,cyan))))
+     `(avy-lead-face-2 ((,class (:inherit isearch :background ,blue))))
+     `(avy-background-face ((,class (:inherit shadow))))
 
 ;;;;; calfw
      `(cfw:face-title               ((,class (:foreground ,head1 :height 2.0 :weight bold :inherit variable-pitch))))
