@@ -104,7 +104,7 @@
         (lnum          (if (eq variant 'dark) (if (true-color-p) "#44505c" "#444444") (if (true-color-p) "#a8a8bf" "#af87af")))
         (mat           (if (eq variant 'dark) (if (true-color-p) "#86dc2f" "#86dc2f") (if (true-color-p) "#ba2f59" "#af005f")))
         (meta          (if (eq variant 'dark) (if (true-color-p) "#9f8766" "#af875f") (if (true-color-p) "#da8b55" "#df5f5f")))
-        (mode-line-bg1 (if (eq variant 'dark) (if (true-color-p) "#3b314d" "#444444") (if (true-color-p) "#cfcfe6" "#d7d7ff")))
+        (mode-line-bg1 (if (eq variant 'dark) (if (true-color-p) "#403654" "#444444") (if (true-color-p) "#cfcfe6" "#d7d7ff")))
         (mode-line-bg2 (if (eq variant 'dark) (if (true-color-p) "#323c45" "#262626") (if (true-color-p) "#d4d9d4" "#ffffff")))
         (str           (if (eq variant 'dark) (if (true-color-p) "#2d9574" "#2aa198") (if (true-color-p) "#2d9574" "#2aa198")))
         (suc           (if (eq variant 'dark) (if (true-color-p) "#86dc2f" "#86dc2f") (if (true-color-p) "#42ae2c" "#00af00")))
