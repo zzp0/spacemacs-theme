@@ -610,7 +610,7 @@
      `(markdown-table-face ((,class (:foreground ,base :background ,head1-bg))))
 
 ;;;;; mode-line
-     `(mode-line           ((,class (:foreground ,base :background ,mode-line-bg1))))
+     `(mode-line           ((,class (:foreground ,base :background ,mode-line-bg1 :box (:color ,base-dim :line-width -1 :style nil)))))
      `(mode-line-inactive  ((,class (:foreground ,base :background ,mode-line-bg2))))
      `(mode-line-buffer-id ((,class (:inherit bold :foreground ,base))))
 
