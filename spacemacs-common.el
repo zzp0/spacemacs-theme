@@ -540,12 +540,9 @@ to 'auto, tags may not be properly aligned."
      `(ido-vertical-match-face ((,class (:foreground ,comp :underline nil))))
 
 ;;;;; info
+     `(Info-quoted ((,class (:inherit font-lock-constant-face))))
      `(info-header-xref ((,class (:foreground ,func :underline t))))
-     `(info-menu ((,class (:foreground ,suc))))
      `(info-node ((,class (:foreground ,func :inherit bold))))
-     `(info-quoted-name ((,class (:foreground ,keyword))))
-     `(info-reference-item ((,class (:background nil :underline t :inherit bold))))
-     `(info-string ((,class (:foreground ,str))))
      `(info-title-1 ((,class (:height 1.4 :inherit bold))))
      `(info-title-2 ((,class (:height 1.3 :inherit bold))))
      `(info-title-3 ((,class (:height 1.3))))
